@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Human-Centric Smart Refrigerator Using Machine Learning - Track food inventory, predict wastage, and get personalized recommendations">
+  <meta name="keywords" content="smart refrigerator, machine learning, food tracking, QR code, wastage prediction">
+  <title>Smart Refrigerator ML | Human-Centric Food Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="header-content">
+        <div class="logo-section">
+          <div class="logo-icon">🧊</div>
+          <div>
+            <h1 class="app-title">Smart Refrigerator ML</h1>
+            <p class="app-subtitle">Human-Centric Food Management</p>
+          </div>
+        </div>
+        <div class="user-section">
+          <label for="current-user">Active User:</label>
+          <select id="current-user" class="user-select">
+            <option value="User A">User A</option>
+            <option value="User B">User B</option>
+            <option value="User C">User C</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <button class="nav-btn active" data-view="dashboard">
+        <span class="nav-icon">📊</span>
+        Dashboard
+      </button>
+      <button class="nav-btn" data-view="scan">
+        <span class="nav-icon">📱</span>
+        Scan QR
+      </button>
+      <button class="nav-btn" data-view="analytics">
+        <span class="nav-icon">📈</span>
+        Analytics
+      </button>
+      <button class="nav-btn" data-view="recommendations">
+        <span class="nav-icon">💡</span>
+        Recommendations
+      </button>
+      <button class="nav-btn" data-view="ml-insights">
+        <span class="nav-icon">🤖</span>
+        ML Insights
+      </button>
+    </nav>
+
+    <main class="main-content">
+      <div id="view-container"></div>
+    </main>
+
+    <div id="modal-container"></div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
